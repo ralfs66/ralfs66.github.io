@@ -72,7 +72,7 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Looking for a reliable and<br> experienced <b>IT consultant</b>? <br> Contact me to:<br> - automate your business<br>                - create custom enterprise software<br>- test the security of your systems<br>- optimize network infrastructure<br>- provide managed IT services<br>- implement cloud solutions (e.g. AWS, Azure, GCP)<br>- perform data backups and disaster recovery planning<br>- maintain broad range of software<br>- offer virtual CTO service<br>- prototype digital products<br>- develop mobile apps and websites<br>- provide training and support for your team<br>- solve your digital challenges<br><br>Send <span class='bold'>'more'</span> to continue.<br>");
+                sendTextMessage("Looking for a reliable and<br> experienced <b>IT professional</b>? <br> Contact me to:<br> - automate your business<br>                - create custom enterprise software<br>- test the security of your systems<br>- optimize network infrastructure<br>- provide managed IT services<br>- implement cloud solutions (e.g. AWS, Azure, GCP)<br>- perform data backups and disaster recovery planning<br>- maintain broad range of software<br>- offer virtual CTO service<br>- prototype digital products<br>- develop mobile apps and websites<br>- provide training and support for your team<br>- solve your digital challenges<br><br>Send <span class='bold'>'more'</span> to continue.<br>");
             }, 2000);
             break;
         case "more":
