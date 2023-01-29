@@ -10,7 +10,7 @@ function startFunction() {
 function setLastSeen() {
     var date = new Date();
     var lastSeen = document.getElementById("lastseen");
-    lastSeen.innerText = "last seen today at " + date.getHours() + ":" + date.getMinutes()
+    lastSeen.innerText = "last seen today at " + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes()
 }
 
 
@@ -72,7 +72,8 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there 👋🏻<br><br>Welcome to <span class='bold'><a class='alink'>Ralfs Batarags IT Consulting</a></span><br><br>Your one-stop solution for process automation, cybersecurity and blockchain development.<br><br>Send <span class='bold'>'more'</span> to continue.<br>");
+                sendTextMessage("Looking for a reliable and experienced IT professional? <br> Contact me to:<br> - automate your business<br>                - create custom enterprise software<br>- test the security of your systems<br>- optimize network infrastructure<br>- provide managed IT services<br>- implement cloud solutions (e.g. AWS, Azure, GCP)<br>- perform data backups and disaster recovery planning<br>- maintain broad range of software<br>- offer virtual CTO service<br>- prototype digital products<br>- develop mobile apps and websites<br>- provide training and support for your team<br>- solve your digital challenges<br>
+                <br>Send <span class='bold'>'more'</span> to continue.<br>");
             }, 2000);
             break;
         case "more":
