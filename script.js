@@ -72,40 +72,24 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("<span class='sk'>Looking for a reliable and<br> experienced <b>technology consultant</b>? <br><br> Contact me to:<br> - automate your business<br>                - create custom enterprise software<br>- test the security of your systems<br>- optimize network infrastructure<br>- provide managed IT services<br>- implement cloud solutions (e.g. AWS, Azure, GCP)<br>- perform data backups and disaster recovery planning<br>- maintain broad range of software<br>- offer virtual CTO service<br>- prototype digital products<br>- develop mobile apps and websites<br>- provide training and support for your team<br>- solve your digital challenges<br><br>Send <span class='bold'>'more'</span> to continue.<br></span>");
+                sendTextMessage("<span class='sk'><span class='bold'>'Hello! I am fully booked now and do not accept new projects.'</span> Contact me to:<br> - automate your business<br>                - create custom enterprise software<br>- test the security of your systems<br>- optimize network infrastructure<br>- provide managed IT services<br>- implement cloud solutions (e.g. AWS, Azure, GCP)<br>- perform data backups and disaster recovery planning<br>- maintain broad range of software<br>- offer virtual CTO service<br>- prototype digital products<br>- develop mobile apps and websites<br>- provide training and support for your team<br>- solve your digital challenges<br><br>Send <span class='bold'>'more'</span> to continue.<br></span>");
             }, 2000);
             break;
         case "more":
-            sendTextMessage("<span class='sk'>Send keyword to get more information about...<br><br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'about'</span> - to know about this site<br><span class='bold'>'video'</span> - embedded youtube test</span>");
+            sendTextMessage("<span class='sk'>Send keyword to get more information about...<br><br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'clear'</span> - to clear conversation<br>");
             break;
         case "resume":
             sendTextMessage(resumeString);
             break;
-        case "skills":
-            sendTextMessage("<span class='sk'>mad <span class='bold'>computer</span> skillz</span>");
-            break;
 
-        case "education":
-            sendTextMessage("mostly youtube");
-            break;
-
-        case "address":
-            sendTextMessage(addressString);
-            break;
 		case "video":
             sendTextMessage('<iframe src="https://www.youtube.com/embed/bxvB8aiXkNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
             break;
         case "clear":
             clearChat();
             break;
-        case "about":
-            sendTextMessage("🛠️💻 this page is built with HTML, CSS and JS");
-            break;
         case "contact":
             sendTextMessage(contactString);
-            break;
-        case "projects":
-            sendTextMessage("Check out my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/ralfs66'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
             break;
         case "new":
             sendTextMessage(addressString);
