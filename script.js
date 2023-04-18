@@ -76,7 +76,7 @@ function waitAndResponce(inputText) {
             }, 2000);
             break;
         case "more":
-            sendTextMessage("<span class='sk'>Send keyword to get more information about...<br><br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'clear'</span> - to clear conversation<br>");
+            sendTextMessage("<span class='sk'>Send keyword to get more information about...<br><br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'clear'</span> - to clear conversation<br>");
             break;
         case "resume":
             sendTextMessage(resumeString);
